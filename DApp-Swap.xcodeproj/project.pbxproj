@@ -7,15 +7,47 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F4A8E35829B12DCB003F511D /* DApp_ExchangeApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35729B12DCB003F511D /* DApp_ExchangeApp.swift */; };
+		F481B7C029BD115C0082EE80 /* SwapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7BF29BD115C0082EE80 /* SwapView.swift */; };
+		F481B7C529BD12FC0082EE80 /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7C429BD12FC0082EE80 /* Color.swift */; };
+		F481B7C829BD132E0082EE80 /* SwapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7C729BD132E0082EE80 /* SwapViewModel.swift */; };
+		F481B7CA29BD134C0082EE80 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7C929BD134C0082EE80 /* BaseViewModel.swift */; };
+		F481B7CD29BD13BC0082EE80 /* TokenModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7CC29BD13BC0082EE80 /* TokenModel.swift */; };
+		F481B7D029BD14660082EE80 /* LoadingIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7CF29BD14660082EE80 /* LoadingIndicator.swift */; };
+		F481B7D629BD14FF0082EE80 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = F481B7D829BD14FF0082EE80 /* Localizable.strings */; };
+		F481B7DA29BD156C0082EE80 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7D929BD156C0082EE80 /* View.swift */; };
+		F481B7DC29BD15910082EE80 /* LocalizedAlertError.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7DB29BD15910082EE80 /* LocalizedAlertError.swift */; };
+		F481B7DE29BD17D30082EE80 /* HapticManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7DD29BD17D30082EE80 /* HapticManager.swift */; };
+		F481B7E129BD18F20082EE80 /* TitleTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E029BD18F20082EE80 /* TitleTextView.swift */; };
+		F481B7E329BD21BD0082EE80 /* SwapPanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E229BD21BD0082EE80 /* SwapPanelView.swift */; };
+		F481B7E529BD255A0082EE80 /* CustomTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E429BD255A0082EE80 /* CustomTextView.swift */; };
+		F481B7E729BD25D80082EE80 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E629BD25D80082EE80 /* PreviewProvider.swift */; };
+		F481B7E929BD28AD0082EE80 /* TokenSelectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E829BD28AD0082EE80 /* TokenSelectButtonView.swift */; };
+		F481B7EE29BD2D510082EE80 /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7ED29BD2D510082EE80 /* RoundedButtonView.swift */; };
+		F4A8E35829B12DCB003F511D /* DApp_SwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */; };
 		F4A8E35A29B12DCB003F511D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35929B12DCB003F511D /* ContentView.swift */; };
 		F4A8E35C29B12DCC003F511D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A8E35B29B12DCC003F511D /* Assets.xcassets */; };
 		F4A8E35F29B12DCC003F511D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A8E35E29B12DCC003F511D /* Preview Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		F4A8E35429B12DCB003F511D /* DApp-Exchange.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DApp-Exchange.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		F4A8E35729B12DCB003F511D /* DApp_ExchangeApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DApp_ExchangeApp.swift; sourceTree = "<group>"; };
+		F481B7BF29BD115C0082EE80 /* SwapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapView.swift; sourceTree = "<group>"; };
+		F481B7C429BD12FC0082EE80 /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		F481B7C729BD132E0082EE80 /* SwapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapViewModel.swift; sourceTree = "<group>"; };
+		F481B7C929BD134C0082EE80 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		F481B7CC29BD13BC0082EE80 /* TokenModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TokenModel.swift; path = ../../../../Desktop/TokenModel.swift; sourceTree = "<group>"; };
+		F481B7CF29BD14660082EE80 /* LoadingIndicator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingIndicator.swift; sourceTree = "<group>"; };
+		F481B7D729BD14FF0082EE80 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		F481B7D929BD156C0082EE80 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		F481B7DB29BD15910082EE80 /* LocalizedAlertError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalizedAlertError.swift; sourceTree = "<group>"; };
+		F481B7DD29BD17D30082EE80 /* HapticManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HapticManager.swift; sourceTree = "<group>"; };
+		F481B7E029BD18F20082EE80 /* TitleTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTextView.swift; sourceTree = "<group>"; };
+		F481B7E229BD21BD0082EE80 /* SwapPanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapPanelView.swift; sourceTree = "<group>"; };
+		F481B7E429BD255A0082EE80 /* CustomTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextView.swift; sourceTree = "<group>"; };
+		F481B7E629BD25D80082EE80 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
+		F481B7E829BD28AD0082EE80 /* TokenSelectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSelectButtonView.swift; sourceTree = "<group>"; };
+		F481B7ED29BD2D510082EE80 /* RoundedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
+		F4A8E35429B12DCB003F511D /* DApp-Swap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DApp-Swap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DApp_SwapApp.swift; sourceTree = "<group>"; };
 		F4A8E35929B12DCB003F511D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F4A8E35B29B12DCC003F511D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F4A8E35E29B12DCC003F511D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -32,10 +64,118 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F481B7BC29BD112D0082EE80 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7CE29BD14530082EE80 /* Components */,
+				F481B7C129BD11660082EE80 /* Swap */,
+				F481B7C929BD134C0082EE80 /* BaseViewModel.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		F481B7BE29BD113F0082EE80 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7BF29BD115C0082EE80 /* SwapView.swift */,
+				F481B7E229BD21BD0082EE80 /* SwapPanelView.swift */,
+				F481B7E829BD28AD0082EE80 /* TokenSelectButtonView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F481B7C129BD11660082EE80 /* Swap */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7C629BD131F0082EE80 /* ViewModels */,
+				F481B7BE29BD113F0082EE80 /* Views */,
+			);
+			path = Swap;
+			sourceTree = "<group>";
+		};
+		F481B7C229BD12E40082EE80 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7C329BD12F00082EE80 /* Extensions */,
+				F481B7DB29BD15910082EE80 /* LocalizedAlertError.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		F481B7C329BD12F00082EE80 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7C429BD12FC0082EE80 /* Color.swift */,
+				F481B7D929BD156C0082EE80 /* View.swift */,
+				F481B7E629BD25D80082EE80 /* PreviewProvider.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F481B7C629BD131F0082EE80 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7C729BD132E0082EE80 /* SwapViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		F481B7CB29BD13AA0082EE80 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7CC29BD13BC0082EE80 /* TokenModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F481B7CE29BD14530082EE80 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7EA29BD2CF50082EE80 /* Buttons */,
+				F481B7DF29BD18DB0082EE80 /* TextViews */,
+				F481B7CF29BD14660082EE80 /* LoadingIndicator.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		F481B7D229BD14D00082EE80 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7D329BD14DE0082EE80 /* Localization */,
+				F481B7DD29BD17D30082EE80 /* HapticManager.swift */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F481B7D329BD14DE0082EE80 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7D829BD14FF0082EE80 /* Localizable.strings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		F481B7DF29BD18DB0082EE80 /* TextViews */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7E029BD18F20082EE80 /* TitleTextView.swift */,
+				F481B7E429BD255A0082EE80 /* CustomTextView.swift */,
+			);
+			path = TextViews;
+			sourceTree = "<group>";
+		};
+		F481B7EA29BD2CF50082EE80 /* Buttons */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7ED29BD2D510082EE80 /* RoundedButtonView.swift */,
+			);
+			path = Buttons;
+			sourceTree = "<group>";
+		};
 		F4A8E34B29B12DCB003F511D = {
 			isa = PBXGroup;
 			children = (
-				F4A8E35629B12DCB003F511D /* DApp-Exchange */,
+				F4A8E35629B12DCB003F511D /* DApp-Swap */,
 				F4A8E35529B12DCB003F511D /* Products */,
 			);
 			sourceTree = "<group>";
@@ -43,20 +183,24 @@
 		F4A8E35529B12DCB003F511D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F4A8E35429B12DCB003F511D /* DApp-Exchange.app */,
+				F4A8E35429B12DCB003F511D /* DApp-Swap.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F4A8E35629B12DCB003F511D /* DApp-Exchange */ = {
+		F4A8E35629B12DCB003F511D /* DApp-Swap */ = {
 			isa = PBXGroup;
 			children = (
-				F4A8E35729B12DCB003F511D /* DApp_ExchangeApp.swift */,
+				F481B7D229BD14D00082EE80 /* Utilities */,
+				F481B7C229BD12E40082EE80 /* Helpers */,
+				F481B7CB29BD13AA0082EE80 /* Models */,
+				F481B7BC29BD112D0082EE80 /* Core */,
+				F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */,
 				F4A8E35929B12DCB003F511D /* ContentView.swift */,
 				F4A8E35B29B12DCC003F511D /* Assets.xcassets */,
 				F4A8E35D29B12DCC003F511D /* Preview Content */,
 			);
-			path = "DApp-Exchange";
+			path = "DApp-Swap";
 			sourceTree = "<group>";
 		};
 		F4A8E35D29B12DCC003F511D /* Preview Content */ = {
@@ -70,9 +214,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F4A8E35329B12DCB003F511D /* DApp-Exchange */ = {
+		F4A8E35329B12DCB003F511D /* DApp-Swap */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F4A8E36229B12DCC003F511D /* Build configuration list for PBXNativeTarget "DApp-Exchange" */;
+			buildConfigurationList = F4A8E36229B12DCC003F511D /* Build configuration list for PBXNativeTarget "DApp-Swap" */;
 			buildPhases = (
 				F4A8E35029B12DCB003F511D /* Sources */,
 				F4A8E35129B12DCB003F511D /* Frameworks */,
@@ -82,9 +226,9 @@
 			);
 			dependencies = (
 			);
-			name = "DApp-Exchange";
+			name = "DApp-Swap";
 			productName = "DApp-Exchange";
-			productReference = F4A8E35429B12DCB003F511D /* DApp-Exchange.app */;
+			productReference = F4A8E35429B12DCB003F511D /* DApp-Swap.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -102,7 +246,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F4A8E34F29B12DCB003F511D /* Build configuration list for PBXProject "DApp-Exchange" */;
+			buildConfigurationList = F4A8E34F29B12DCB003F511D /* Build configuration list for PBXProject "DApp-Swap" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -115,7 +259,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F4A8E35329B12DCB003F511D /* DApp-Exchange */,
+				F4A8E35329B12DCB003F511D /* DApp-Swap */,
 			);
 		};
 /* End PBXProject section */
@@ -126,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A8E35F29B12DCC003F511D /* Preview Assets.xcassets in Resources */,
+				F481B7D629BD14FF0082EE80 /* Localizable.strings in Resources */,
 				F4A8E35C29B12DCC003F511D /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,11 +283,37 @@
 			buildActionMask = 2147483647;
 			files = (
 				F4A8E35A29B12DCB003F511D /* ContentView.swift in Sources */,
-				F4A8E35829B12DCB003F511D /* DApp_ExchangeApp.swift in Sources */,
+				F481B7E529BD255A0082EE80 /* CustomTextView.swift in Sources */,
+				F481B7CD29BD13BC0082EE80 /* TokenModel.swift in Sources */,
+				F481B7C529BD12FC0082EE80 /* Color.swift in Sources */,
+				F481B7E729BD25D80082EE80 /* PreviewProvider.swift in Sources */,
+				F481B7EE29BD2D510082EE80 /* RoundedButtonView.swift in Sources */,
+				F481B7C029BD115C0082EE80 /* SwapView.swift in Sources */,
+				F481B7D029BD14660082EE80 /* LoadingIndicator.swift in Sources */,
+				F481B7DC29BD15910082EE80 /* LocalizedAlertError.swift in Sources */,
+				F481B7DA29BD156C0082EE80 /* View.swift in Sources */,
+				F4A8E35829B12DCB003F511D /* DApp_SwapApp.swift in Sources */,
+				F481B7E129BD18F20082EE80 /* TitleTextView.swift in Sources */,
+				F481B7DE29BD17D30082EE80 /* HapticManager.swift in Sources */,
+				F481B7C829BD132E0082EE80 /* SwapViewModel.swift in Sources */,
+				F481B7CA29BD134C0082EE80 /* BaseViewModel.swift in Sources */,
+				F481B7E929BD28AD0082EE80 /* TokenSelectButtonView.swift in Sources */,
+				F481B7E329BD21BD0082EE80 /* SwapPanelView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F481B7D829BD14FF0082EE80 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F481B7D729BD14FF0082EE80 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F4A8E36029B12DCC003F511D /* Debug */ = {
@@ -266,7 +437,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DApp-Exchange/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DApp-Swap/Preview Content\"";
 				DEVELOPMENT_TEAM = JZG66JS6WW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +466,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"DApp-Exchange/Preview Content\"";
+				DEVELOPMENT_ASSET_PATHS = "\"DApp-Swap/Preview Content\"";
 				DEVELOPMENT_TEAM = JZG66JS6WW;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -320,7 +491,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F4A8E34F29B12DCB003F511D /* Build configuration list for PBXProject "DApp-Exchange" */ = {
+		F4A8E34F29B12DCB003F511D /* Build configuration list for PBXProject "DApp-Swap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4A8E36029B12DCC003F511D /* Debug */,
@@ -329,7 +500,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F4A8E36229B12DCC003F511D /* Build configuration list for PBXNativeTarget "DApp-Exchange" */ = {
+		F4A8E36229B12DCC003F511D /* Build configuration list for PBXNativeTarget "DApp-Swap" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F4A8E36329B12DCC003F511D /* Debug */,
