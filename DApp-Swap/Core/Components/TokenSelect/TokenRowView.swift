@@ -1,10 +1,3 @@
-//
-//  TokenRowView.swift
-//  DApp-Swap
-//
-//  Created by Bence Borsos on 2023. 03. 12..
-//
-
 import SwiftUI
 
 struct TokenRowView: View {

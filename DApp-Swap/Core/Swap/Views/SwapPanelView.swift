@@ -55,6 +55,12 @@ extension SwapPanelView {
                 .font(.title2)
                 .fontWeight(.bold)
                 .padding(.bottom, 5)
+                .foregroundColor(Color.theme.text)
+                .onTapGesture {
+                    if swapValue == "0" {
+                        swapValue = ""
+                    }
+                }
             Spacer()
             if from {
                 Button(action: {

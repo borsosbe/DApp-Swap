@@ -1,10 +1,3 @@
-//
-//  TokenSelectView.swift
-//  DApp-Swap
-//
-//  Created by Bence Borsos on 2023. 03. 12..
-//
-
 import SwiftUI
 
 struct TokenSelectView: View {
@@ -12,22 +5,26 @@ struct TokenSelectView: View {
     @Binding var tokens: [TokenModel]
     @Binding var selectedToken: TokenModel
     @Binding var showingPopover: Bool
+    
     var body: some View {
-        VStack {
-            navBar
-            List {
-                ForEach($tokens) { token in
-                    TokenRowView(token: token)
-                        .listRowSeparator(.hidden)
-                        .onTapGesture {
-                            selected(token: token)
-                        }
+        ZStack {
+            Color.theme.background.ignoresSafeArea()
+            VStack {
+                navBar
+                List {
+                    ForEach($tokens) { token in
+                        TokenRowView(token: token)
+                            .listRowSeparator(.hidden)
+                            .onTapGesture {
+                                selected(token: token)
+                            }
+                    }
                 }
+                .environment(\.defaultMinListRowHeight, 30)
+                .listStyle(.plain)
+                .colorScheme(.light)
+                Spacer()
             }
-            .environment(\.defaultMinListRowHeight, 30)
-            .listStyle(.plain)
-            .colorScheme(.light)
-            Spacer()
         }
     }
 }

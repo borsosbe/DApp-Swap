@@ -95,7 +95,7 @@ extension SwapView {
                     .font(.system(size: 35))
                     .padding(5)
             })
-            SwapPanelView(tokens:$vm.tokens, showingPopover: $swapToPopover, token: $vm.tokenTo, swapValue: $vm.valueFrom, from: true)
+            SwapPanelView(tokens:$vm.tokens, showingPopover: $swapToPopover, token: $vm.tokenTo, swapValue: $vm.valueTo, from: true)
         }
     }
     
