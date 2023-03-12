@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct SwapPanelView: View {
+    @Binding var tokens: [TokenModel]
+    @Binding var showingPopover: Bool
     @Binding var token: TokenModel
     @Binding var swapValue: String
     private let swapFromText: LocalizedStringKey = "swapTitle"
@@ -28,7 +30,7 @@ struct SwapPanelView: View {
 
 struct SwapPanelView_Previews: PreviewProvider {
     static var previews: some View {
-        SwapPanelView(token: .constant(dev.tokenUSDT), swapValue: .constant("0.567"), from: true)
+        SwapPanelView(tokens: .constant(dev.tokens), showingPopover: .constant(false), token: .constant(dev.tokenUSDT), swapValue: .constant("0.567"), from: true)
     }
 }
 
@@ -37,8 +39,13 @@ extension SwapPanelView {
         HStack {
             CustomTextView(text: from ? swapFromText.localized() : swapToText.localized(), font: .title2, fontWeight: .bold)
             Spacer()
-            TokenSelectButtonView(token: $token)
-                .frame(alignment: .trailing)
+            Button(action: {
+                showingPopover.toggle()
+            }, label: {
+                TokenSelectButtonView(token: $token)
+                    .frame(alignment: .trailing)
+            })
+            
         }
     }
     private var value: some View {
@@ -64,7 +71,7 @@ extension SwapPanelView {
     }
     private var balance: some View {
         HStack {
-            CustomTextView(text: "\(balanceText.localized()) 3.2212312312312231 \(String(describing: token.name))", font: .caption, fontWeight: .light, textColor: Color.theme.gray)
+            CustomTextView(text: "\(balanceText.localized()) 3.2212312312312231 \(token.name)", font: .caption, fontWeight: .light, textColor: Color.theme.gray)
             Image(systemName: "equal.circle.fill")
                 .font(.body)
                 .foregroundColor(Color.theme.gray)

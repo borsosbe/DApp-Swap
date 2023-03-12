@@ -30,6 +30,8 @@
 		F481B7FD29BE0DB90082EE80 /* ImageFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7FC29BE0DB90082EE80 /* ImageFetchingService.swift */; };
 		F481B7FF29BE0E210082EE80 /* TokenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7FE29BE0E210082EE80 /* TokenImageView.swift */; };
 		F481B80229BE0E750082EE80 /* TokenImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B80129BE0E750082EE80 /* TokenImageViewModel.swift */; };
+		F481B80829BE5CBB0082EE80 /* TokenSelectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B80729BE5CBB0082EE80 /* TokenSelectView.swift */; };
+		F481B80A29BE5E2A0082EE80 /* TokenRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B80929BE5E2A0082EE80 /* TokenRowView.swift */; };
 		F4A8E35829B12DCB003F511D /* DApp_SwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */; };
 		F4A8E35A29B12DCB003F511D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35929B12DCB003F511D /* ContentView.swift */; };
 		F4A8E35C29B12DCC003F511D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A8E35B29B12DCC003F511D /* Assets.xcassets */; };
@@ -60,6 +62,8 @@
 		F481B7FC29BE0DB90082EE80 /* ImageFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetchingService.swift; sourceTree = "<group>"; };
 		F481B7FE29BE0E210082EE80 /* TokenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenImageView.swift; sourceTree = "<group>"; };
 		F481B80129BE0E750082EE80 /* TokenImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenImageViewModel.swift; sourceTree = "<group>"; };
+		F481B80729BE5CBB0082EE80 /* TokenSelectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSelectView.swift; sourceTree = "<group>"; };
+		F481B80929BE5E2A0082EE80 /* TokenRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenRowView.swift; sourceTree = "<group>"; };
 		F4A8E35429B12DCB003F511D /* DApp-Swap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DApp-Swap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DApp_SwapApp.swift; sourceTree = "<group>"; };
 		F4A8E35929B12DCB003F511D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -148,7 +152,8 @@
 		F481B7CE29BD14530082EE80 /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				F481B80029BE0E540082EE80 /* TokenImageView */,
+				F481B80529BE5C8B0082EE80 /* TokenSelect */,
+				F481B80629BE5C990082EE80 /* TokenImage */,
 				F481B7EA29BD2CF50082EE80 /* Buttons */,
 				F481B7DF29BD18DB0082EE80 /* TextViews */,
 				F481B7CF29BD14660082EE80 /* LoadingIndicator.swift */,
@@ -207,13 +212,22 @@
 			path = Protocols;
 			sourceTree = "<group>";
 		};
-		F481B80029BE0E540082EE80 /* TokenImageView */ = {
+		F481B80529BE5C8B0082EE80 /* TokenSelect */ = {
+			isa = PBXGroup;
+			children = (
+				F481B80729BE5CBB0082EE80 /* TokenSelectView.swift */,
+				F481B80929BE5E2A0082EE80 /* TokenRowView.swift */,
+			);
+			path = TokenSelect;
+			sourceTree = "<group>";
+		};
+		F481B80629BE5C990082EE80 /* TokenImage */ = {
 			isa = PBXGroup;
 			children = (
 				F481B7FE29BE0E210082EE80 /* TokenImageView.swift */,
 				F481B80129BE0E750082EE80 /* TokenImageViewModel.swift */,
 			);
-			path = TokenImageView;
+			path = TokenImage;
 			sourceTree = "<group>";
 		};
 		F4A8E34B29B12DCB003F511D = {
@@ -343,6 +357,7 @@
 				F481B7DA29BD156C0082EE80 /* View.swift in Sources */,
 				F4A8E35829B12DCB003F511D /* DApp_SwapApp.swift in Sources */,
 				F481B7FF29BE0E210082EE80 /* TokenImageView.swift in Sources */,
+				F481B80829BE5CBB0082EE80 /* TokenSelectView.swift in Sources */,
 				F481B7F029BDE50F0082EE80 /* SwapDetailRowView.swift in Sources */,
 				F481B7E129BD18F20082EE80 /* TitleTextView.swift in Sources */,
 				F481B7DE29BD17D30082EE80 /* HapticManager.swift in Sources */,
@@ -351,6 +366,7 @@
 				F481B7CA29BD134C0082EE80 /* BaseViewModel.swift in Sources */,
 				F481B7E929BD28AD0082EE80 /* TokenSelectButtonView.swift in Sources */,
 				F481B7E329BD21BD0082EE80 /* SwapPanelView.swift in Sources */,
+				F481B80A29BE5E2A0082EE80 /* TokenRowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

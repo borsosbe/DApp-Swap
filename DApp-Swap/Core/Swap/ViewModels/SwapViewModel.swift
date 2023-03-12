@@ -2,9 +2,9 @@ import Foundation
 import Combine
 
 final class SwapViewModel: BaseViewModel {
-    @Published private(set) var tokens: [TokenModel] = []
     @Published private(set) var swapDetails: [SwapDetail] = []
     @Published private(set) var refreshInProgess: Bool = false
+    @Published var tokens: [TokenModel] = []
     @Published var tokenFrom: TokenModel = TokenModel()
     @Published var tokenTo: TokenModel = TokenModel()
     @Published var valueFrom: String = "0"
@@ -39,7 +39,10 @@ final class SwapViewModel: BaseViewModel {
     }
     
     private func loadTokens() {
-        tokens = [TokenModel(id: 0, name: "USDT", url: URL(string: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=024")), TokenModel(id: 1, name: "BNB", url: URL(string: "https://cryptologos.cc/logos/bnb-bnb-logo.png?v=024"))]
+        tokens = [TokenModel(id: 0, name: "USDT", url: URL(string: "https://cryptologos.cc/logos/tether-usdt-logo.png?v=024")),
+                  TokenModel(id: 1, name: "BNB", url: URL(string: "https://cryptologos.cc/logos/bnb-bnb-logo.png?v=024")),
+                  TokenModel(id: 2, name: "BUSD", url: URL(string: "https://cryptologos.cc/logos/binance-usd-busd-logo.png?v=024")),
+        ]
         tokenFrom = tokens[0]
         tokenTo = tokens[1]
     }

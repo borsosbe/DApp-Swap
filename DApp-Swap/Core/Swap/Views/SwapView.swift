@@ -1,6 +1,8 @@
 import SwiftUI
 
 struct SwapView: View {
+    @State private var swapFromPopover = false
+    @State private var swapToPopover = false
     @StateObject private var vm: SwapViewModel
     private let title: LocalizedStringKey = "swapTitle"
     private let reviewButtonTitle: LocalizedStringKey = "reviewTrade"
@@ -36,6 +38,12 @@ struct SwapView: View {
             }
             .padding([.leading, .trailing])
         }
+        .popover(isPresented: $swapFromPopover) {
+            TokenSelectView(tokens: $vm.tokens, selectedToken: $vm.tokenFrom, showingPopover: $swapFromPopover)
+        }
+        .popover(isPresented: $swapToPopover) {
+            TokenSelectView(tokens: $vm.tokens, selectedToken: $vm.tokenTo, showingPopover: $swapToPopover)
+        }
         .dynamicTypeSize(.small ... .large)
         .errorAlert(error: $vm.error)
         .onAppear {
@@ -60,7 +68,6 @@ extension SwapView {
                 VStack{
                     TitleTextView(text: title.localized())
                 }
-                .fixedSize()
                 Spacer()
             }
             HStack {
@@ -79,7 +86,7 @@ extension SwapView {
     
     private var swapPanels: some View {
         VStack {
-            SwapPanelView(token: $vm.tokenFrom, swapValue: $vm.valueFrom, from: true)
+            SwapPanelView(tokens:$vm.tokens, showingPopover: $swapFromPopover, token: $vm.tokenFrom, swapValue: $vm.valueFrom, from: true)
             Button(action: {
                 vm.onChangeSwapDirection()
             }, label: {
@@ -88,7 +95,7 @@ extension SwapView {
                     .font(.system(size: 35))
                     .padding(5)
             })
-            SwapPanelView(token: $vm.tokenTo, swapValue: $vm.valueTo, from: false)
+            SwapPanelView(tokens:$vm.tokens, showingPopover: $swapToPopover, token: $vm.tokenTo, swapValue: $vm.valueFrom, from: true)
         }
     }
     
