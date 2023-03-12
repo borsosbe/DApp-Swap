@@ -2,7 +2,10 @@ import SwiftUI
 
 struct SwapView: View {
     @StateObject private var vm: SwapViewModel
-    private let title: LocalizedStringKey = "swap_title"
+    private let title: LocalizedStringKey = "swapTitle"
+    private let reviewButtonTitle: LocalizedStringKey = "reviewTrade"
+    private let swapDetailsTitle: LocalizedStringKey = "swapDetails"
+    private var panelOrderToggle = false
     
     init() {
         _vm = StateObject(wrappedValue: SwapViewModel())
@@ -11,26 +14,34 @@ struct SwapView: View {
     var body: some View {
         ZStack {
             Color.theme.background.ignoresSafeArea()
-            VStack(alignment: .center) {
-                if vm.refreshInProgess {
-                    LoadingIndicator()
-                }
-                if !vm.refreshInProgess && !vm.tokens.isEmpty {
-                    navBar
-                    Spacer()
-                    VStack {
-                        SwapPanelView(token: TokenModel(id: 0, name: "USDT"), from: true)
-                        SwapPanelView(token: TokenModel(id: 0, name: "USDT"), from: false)
+            VStack {
+                navBar
+                    .padding(.bottom)
+                ScrollView {
+                    if vm.refreshInProgess {
+                        LoadingIndicator()
                     }
-                    .padding(.leading)
-                    .padding(.trailing)
-                    Spacer()
+                    if !vm.refreshInProgess && !vm.tokens.isEmpty {
+                        swapPanels
+                        swapDetails
+                    }
                 }
+                Spacer()
+                Button(action: {
+                    vm.onReviewTrade()
+                }, label: {
+                    RoundedButtonView(title: reviewButtonTitle.localized(), fill: true)
+                })
+                
             }
+            .padding([.leading, .trailing])
         }
+        .dynamicTypeSize(.small ... .large)
         .errorAlert(error: $vm.error)
         .onAppear {
             vm.onViewModelAppear()
+        }
+        .onTapGesture { UIApplication.shared.sendAction(#selector(UIResponder.resignFirstResponder), to: nil, from: nil, for: nil)
         }
     }
 }
@@ -47,7 +58,7 @@ extension SwapView {
             HStack {
                 Spacer()
                 VStack{
-                    TitleTextView(text: "Trade")
+                    TitleTextView(text: title.localized())
                 }
                 .fixedSize()
                 Spacer()
@@ -55,7 +66,7 @@ extension SwapView {
             HStack {
                 Spacer()
                 Button(action: {
-                    vm.close()
+                    vm.onClose()
                 }, label: {
                     Image(systemName: "x.circle")
                         .font(.system(size: 30))
@@ -64,5 +75,54 @@ extension SwapView {
             .padding(.trailing)
         }
         .fixedSize(horizontal: false, vertical: true)
+    }
+    
+    private var swapPanels: some View {
+        VStack {
+            SwapPanelView(token: $vm.tokenFrom, swapValue: $vm.valueFrom, from: true)
+            Button(action: {
+                vm.onChangeSwapDirection()
+            }, label: {
+                Image(systemName: "arrow.down.circle.fill")
+                    .foregroundColor(Color.theme.accent)
+                    .font(.system(size: 35))
+                    .padding(5)
+            })
+            SwapPanelView(token: $vm.tokenTo, swapValue: $vm.valueTo, from: false)
+        }
+    }
+    
+    private var swapDetailTitle: some View {
+        HStack {
+            Rectangle()
+                .fill(
+                LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .leading, endPoint: .trailing)
+                )
+            CustomTextView(text: swapDetailsTitle.localized(), fontWeight: .bold)
+                .fixedSize()
+            Rectangle()
+                .fill(
+                LinearGradient(gradient: Gradient(colors: [.white, .black]), startPoint: .trailing, endPoint: .leading)
+                )
+        }
+        .frame(height: 1.3)
+        .padding()
+    }
+    
+    private var swapDetails: some View {
+        VStack {
+            swapDetailTitle
+                .padding(.bottom)
+            List {
+                ForEach(vm.swapDetails) { detail in
+                    SwapDetailRowView(detail: detail)
+                        .listRowSeparator(.hidden)
+                }
+            }
+            .frame(height: CGFloat(vm.swapDetails.count) * CGFloat(30))
+            .environment(\.defaultMinListRowHeight, 30)
+            .listStyle(.plain)
+            .colorScheme(.light)
+        }
     }
 }

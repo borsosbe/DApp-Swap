@@ -23,6 +23,13 @@
 		F481B7E729BD25D80082EE80 /* PreviewProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E629BD25D80082EE80 /* PreviewProvider.swift */; };
 		F481B7E929BD28AD0082EE80 /* TokenSelectButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7E829BD28AD0082EE80 /* TokenSelectButtonView.swift */; };
 		F481B7EE29BD2D510082EE80 /* RoundedButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7ED29BD2D510082EE80 /* RoundedButtonView.swift */; };
+		F481B7F029BDE50F0082EE80 /* SwapDetailRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7EF29BDE50F0082EE80 /* SwapDetailRowView.swift */; };
+		F481B7F229BDE6780082EE80 /* SwapDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7F129BDE6780082EE80 /* SwapDetail.swift */; };
+		F481B7F429BDE8520082EE80 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7F329BDE8520082EE80 /* String.swift */; };
+		F481B7FB29BE0DAB0082EE80 /* FileFetchingServiceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7FA29BE0DAB0082EE80 /* FileFetchingServiceProtocol.swift */; };
+		F481B7FD29BE0DB90082EE80 /* ImageFetchingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7FC29BE0DB90082EE80 /* ImageFetchingService.swift */; };
+		F481B7FF29BE0E210082EE80 /* TokenImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B7FE29BE0E210082EE80 /* TokenImageView.swift */; };
+		F481B80229BE0E750082EE80 /* TokenImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F481B80129BE0E750082EE80 /* TokenImageViewModel.swift */; };
 		F4A8E35829B12DCB003F511D /* DApp_SwapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */; };
 		F4A8E35A29B12DCB003F511D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4A8E35929B12DCB003F511D /* ContentView.swift */; };
 		F4A8E35C29B12DCC003F511D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4A8E35B29B12DCC003F511D /* Assets.xcassets */; };
@@ -46,6 +53,13 @@
 		F481B7E629BD25D80082EE80 /* PreviewProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewProvider.swift; sourceTree = "<group>"; };
 		F481B7E829BD28AD0082EE80 /* TokenSelectButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenSelectButtonView.swift; sourceTree = "<group>"; };
 		F481B7ED29BD2D510082EE80 /* RoundedButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButtonView.swift; sourceTree = "<group>"; };
+		F481B7EF29BDE50F0082EE80 /* SwapDetailRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapDetailRowView.swift; sourceTree = "<group>"; };
+		F481B7F129BDE6780082EE80 /* SwapDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwapDetail.swift; sourceTree = "<group>"; };
+		F481B7F329BDE8520082EE80 /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F481B7FA29BE0DAB0082EE80 /* FileFetchingServiceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FileFetchingServiceProtocol.swift; sourceTree = "<group>"; };
+		F481B7FC29BE0DB90082EE80 /* ImageFetchingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageFetchingService.swift; sourceTree = "<group>"; };
+		F481B7FE29BE0E210082EE80 /* TokenImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenImageView.swift; sourceTree = "<group>"; };
+		F481B80129BE0E750082EE80 /* TokenImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TokenImageViewModel.swift; sourceTree = "<group>"; };
 		F4A8E35429B12DCB003F511D /* DApp-Swap.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "DApp-Swap.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F4A8E35729B12DCB003F511D /* DApp_SwapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DApp_SwapApp.swift; sourceTree = "<group>"; };
 		F4A8E35929B12DCB003F511D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -80,6 +94,7 @@
 				F481B7BF29BD115C0082EE80 /* SwapView.swift */,
 				F481B7E229BD21BD0082EE80 /* SwapPanelView.swift */,
 				F481B7E829BD28AD0082EE80 /* TokenSelectButtonView.swift */,
+				F481B7EF29BDE50F0082EE80 /* SwapDetailRowView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -108,6 +123,7 @@
 				F481B7C429BD12FC0082EE80 /* Color.swift */,
 				F481B7D929BD156C0082EE80 /* View.swift */,
 				F481B7E629BD25D80082EE80 /* PreviewProvider.swift */,
+				F481B7F329BDE8520082EE80 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -124,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				F481B7CC29BD13BC0082EE80 /* TokenModel.swift */,
+				F481B7F129BDE6780082EE80 /* SwapDetail.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -131,6 +148,7 @@
 		F481B7CE29BD14530082EE80 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				F481B80029BE0E540082EE80 /* TokenImageView */,
 				F481B7EA29BD2CF50082EE80 /* Buttons */,
 				F481B7DF29BD18DB0082EE80 /* TextViews */,
 				F481B7CF29BD14660082EE80 /* LoadingIndicator.swift */,
@@ -172,6 +190,32 @@
 			path = Buttons;
 			sourceTree = "<group>";
 		};
+		F481B7F829BE0D910082EE80 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7F929BE0D9B0082EE80 /* Protocols */,
+				F481B7FC29BE0DB90082EE80 /* ImageFetchingService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F481B7F929BE0D9B0082EE80 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7FA29BE0DAB0082EE80 /* FileFetchingServiceProtocol.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		F481B80029BE0E540082EE80 /* TokenImageView */ = {
+			isa = PBXGroup;
+			children = (
+				F481B7FE29BE0E210082EE80 /* TokenImageView.swift */,
+				F481B80129BE0E750082EE80 /* TokenImageViewModel.swift */,
+			);
+			path = TokenImageView;
+			sourceTree = "<group>";
+		};
 		F4A8E34B29B12DCB003F511D = {
 			isa = PBXGroup;
 			children = (
@@ -192,6 +236,7 @@
 			isa = PBXGroup;
 			children = (
 				F481B7D229BD14D00082EE80 /* Utilities */,
+				F481B7F829BE0D910082EE80 /* Services */,
 				F481B7C229BD12E40082EE80 /* Helpers */,
 				F481B7CB29BD13AA0082EE80 /* Models */,
 				F481B7BC29BD112D0082EE80 /* Core */,
@@ -282,8 +327,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F481B7FD29BE0DB90082EE80 /* ImageFetchingService.swift in Sources */,
 				F4A8E35A29B12DCB003F511D /* ContentView.swift in Sources */,
+				F481B80229BE0E750082EE80 /* TokenImageViewModel.swift in Sources */,
+				F481B7FB29BE0DAB0082EE80 /* FileFetchingServiceProtocol.swift in Sources */,
 				F481B7E529BD255A0082EE80 /* CustomTextView.swift in Sources */,
+				F481B7F429BDE8520082EE80 /* String.swift in Sources */,
 				F481B7CD29BD13BC0082EE80 /* TokenModel.swift in Sources */,
 				F481B7C529BD12FC0082EE80 /* Color.swift in Sources */,
 				F481B7E729BD25D80082EE80 /* PreviewProvider.swift in Sources */,
@@ -293,9 +342,12 @@
 				F481B7DC29BD15910082EE80 /* LocalizedAlertError.swift in Sources */,
 				F481B7DA29BD156C0082EE80 /* View.swift in Sources */,
 				F4A8E35829B12DCB003F511D /* DApp_SwapApp.swift in Sources */,
+				F481B7FF29BE0E210082EE80 /* TokenImageView.swift in Sources */,
+				F481B7F029BDE50F0082EE80 /* SwapDetailRowView.swift in Sources */,
 				F481B7E129BD18F20082EE80 /* TitleTextView.swift in Sources */,
 				F481B7DE29BD17D30082EE80 /* HapticManager.swift in Sources */,
 				F481B7C829BD132E0082EE80 /* SwapViewModel.swift in Sources */,
+				F481B7F229BDE6780082EE80 /* SwapDetail.swift in Sources */,
 				F481B7CA29BD134C0082EE80 /* BaseViewModel.swift in Sources */,
 				F481B7E929BD28AD0082EE80 /* TokenSelectButtonView.swift in Sources */,
 				F481B7E329BD21BD0082EE80 /* SwapPanelView.swift in Sources */,

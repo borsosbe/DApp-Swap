@@ -1,1 +1,11 @@
-"swap_title" = "Trade";
+"swapTitle" = "Trade";
+"exchangeRate" = "Exchange Rate";
+"networkFees" = "Network Fees";
+"priceImpact" = "Price Impact";
+"swappingWith" = "Swapping with";
+"gasRefund" = "Gas Refund";
+"reviewTrade" = "Review Trade";
+"swapFrom" = "Swap from";
+"swapTo" = "To";
+"max" = "Max";
+"balance" = "Balance:";
