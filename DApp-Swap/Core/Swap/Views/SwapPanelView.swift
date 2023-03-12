@@ -6,7 +6,7 @@ struct SwapPanelView: View {
     private let swapFromText: LocalizedStringKey = "swapTitle"
     private let swapToText: LocalizedStringKey = "swapTo"
     private let maxText: LocalizedStringKey = "max"
-    private let balanceText: LocalizedStringKey = "max"
+    private let balanceText: LocalizedStringKey = "balance"
     let from: Bool
     
     var body: some View {
